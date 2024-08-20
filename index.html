@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+
+     <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+
+
+    <div class="hero-header">
+      <div class="hero-background">
+        <div class="wrapper">
+            <!-- nav section starts -->
+            <header>
+                <div class="logo">
+                    <!-- <i class="fa-solid fa-s"></i> -->
+                     <a href="https://www.facebook.com/siddhi.ganesh.737" target="_blank"><img src="assets/logo.png" alt="logo"></a>
+                   
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#tchr">Teacher's</a></li>
+                        <li><a href="#txt1">Gallery</a></li>
+                        <li><a href="#contact us">Contact Us</a></li>
+                        <li><a href="#">News & Events</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- nav section ends -->
+
+          
+            </div>
+ <!-- hero section -->
+ <header class="hero">
+
+
+
+    <div class="hero-inner">
+      <h1>Shree Siddhi Ganesh Secondary School</h1>
+      <p>"Quality Education Our Commitment"</p>
+      <a href="https://siddhiganeshss.edu.np/" target="_blank"><button id="first">Learn More</button></a>
+      <a href="https://www.facebook.com/siddhi.ganesh.737/photos" target="_blank"><button id="sec">Reach Us</button></a>
+    </div>
+  </header>
+
+  <!-- End of hero section -->
+
+
+<!-- container section starts -->
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="assets/image3.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5> <span class="input">Learning is a treasure that will follow you everywhere.</span></h5>
+                    <h1>Welcome Message</h1>
+                    <p>Welcome to Siddhi Ganesh Secondary School
+                     I am Raj Kumar Yadav, Principal of Siddhi Ganesh Secondary School. 
+                     Our school is a vibrant community of learners, dedicated to providing a holistic education 
+                     that fosters academic excellence, personal growth, and social responsibility.    
+                       
+                     We strive to create a nurturing environment that encourages our students to explore, learn, and thrive. 
+                     I invite you to explore our website and discover the various facets of our school.
+                        
+                    "Empowering minds, enriching lives."</p>
+
+                   
+                 </div>
+            </div>
+        </div>
+     </div>
+
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Learning is a treasure that will follow you everywhere.","Education is not preparation for life; education is life itself.","Teach a man to fish and you feed him for a lifetime."],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+<!-- container section ends -->
+
+
+
+<!-- starting of teacher info section -->
+<div class="staff">
+  <div id="tchr"></div>   
+  Teacher's & Management Team
+</div>
+
+<div class="slide-container swiper">
+  <div class="slide-content">
+    <div class="card-wrapper swiper-wrapper">
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="images/profile1.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          
+          <h2 class="name">Raj Kumar Yadav</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+            dolor sit amet consectetur adipisicing elit.</p>
+
+         <a href="https://www.facebook.com/profile.php?id=100004068351178" target="_blank"><button class="button">View More</button></a>
+         
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="images/profile2.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Tilak Dangal</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+            dolor sit amet consectetur adipisicing elit.</p>
+
+          <a href="https://www.facebook.com/tilak.dangal.3" target="_blank"><button class="button">View More</button></a>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="images/profile3.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Saradha Adhikari</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+            dolor sit amet consectetur adipisicing elit.</p>
+
+          <a href="https://www.facebook.com/sharada.adhikari.961" target="_blank"><button class="button">View More</button></a>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="images/profile4.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Sankar Bahadur Shrestha</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+            dolor sit amet consectetur adipisicing elit.</p>
+
+          <a href="https://www.facebook.com/shankar.shrestha.37669528" target="_blank"><button class="button">View More</button></a>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="images/profile5.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Bishnumaya Timalsina</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+            dolor sit amet consectetur adipisicing elit.</p>
+
+          <a href="https://www.facebook.com/bishnumaya.timalsina.3" target="_blank"><button class="button">View More</button></a>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="images/profile6.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Raj Kumar Shrestha</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+            dolor sit amet consectetur adipisicing elit.</p>
+
+          <a href="https://www.facebook.com/profile.php?id=100087716336116" target="_blank"><button class="button">View More</button></a>
+        </div>
+      </div>
+
+      
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="images/profile7.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Uma Prashad Dulal</h2>
+          <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+            dolor sit amet consectetur adipisicing elit.</p>
+
+          <a href="https://www.facebook.com/umaprasad.dulal" target="_blank"><button class="button">View More</button></a>
+        </div>
+      </div>
+   </div>
+</div>
+
+  <div class="swiper-button-next swiper-navBtn"></div>
+  <div class="swiper-button-prev swiper-navBtn"></div>
+  <div class="swiper-pagination"></div>
+</div>
+<!-- ending of teacher info section -->
+
+
+<!-- Starting of Gallery Section -->
+
+<div class="text">
+  <div id="txt1">Gallery</div>
+  <div class="txt2">Life at Siddhi Ganesh</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_blank" href="assets/image6.png">
+  <img src="assets/image6.png" alt="morning assembly" width="600" height="400">
+</a>
+<div class="desc">Morning Assembly</div>
+</div>
+</div>
+
+
+
+<div class="responsive">
+<div class="gallery">
+<a target="_blank" href="assets/newyear.jpg">
+  <img src="assets/newyear.jpg" alt="main building" width="600" height="400">
+</a>
+<div class="desc">New year 2021</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_blank" href="assets/image4.png">
+  <img src="assets/image4.png" alt="school entry gate" width="600" height="400">
+</a>
+<div class="desc">School Entry Gate</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_blank" href="assets/image5.jpg">
+  <img src="assets/image5.jpg" alt="dancing program" width="600" height="400">
+</a>
+<div class="desc">Annual Ceromany</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_blank" href="assets/aniv1.jpg">
+  <img src="assets/aniv1.jpg" alt="morining assembly" width="600" height="400">
+</a>
+<div class="desc">Dance Compitition</div>
+</div>
+</div>
+
+
+<div class="responsive">
+<div class="gallery">
+<a target="_blank" href="assets/aniv2.jpg">
+  <img src="assets/principle.jpg" alt="main building" width="600" height="400">
+</a>
+<div class="desc">Principle Sir </div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_blank" href="assets/aniv3.jpg">
+  <img src="assets/aniv3.jpg" alt="school entry gate" width="600" height="400">
+</a>
+<div class="desc">Students, teachers & parent</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+<a target="_blank" href="assets/aniv4.jpg">
+  <img src="assets/aniv4.jpg" alt="dancing program" width="600" height="400">
+</a>
+<div class="desc">Winners</div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<!-- Ending of Gallery Section -->
+
+
+
+<!-- starting of contact us section -->
+<div class="col-md-12 contact-box">
+  <div class="row">
+    <div class="col-md-5 details-section">
+      
+      <h2 id="contact us">Contact Details</h2>
+      <p id="hello">Get in touch with us to learn more about our school and programs.</p>
+      <h3>Address</h3>
+      <p>Chautara Sangachokgadi-7,Sindhupalchok</p>
+      <h3>Phone and Email</h3>
+      <p>Phone: 9841530306</p>
+      <p>Email: siddhiganeshhsanosiruwari30@gmail.com</p>
+    </div>
+    <div class="col-md-4 get-in-touch-section">
+      <h2>Get in Touch</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+    <div class="col-md-3 social-media-section">
+      <h2>Follow Us</h2>
+      <ul>
+        <li><a href="#" class="fab fa-facebook"></a></li>
+        <li><a href="#" class="fab fa-instagram"></a></li>
+        <li><a href="#" class="fab fa-reddit"></a></li>
+        <li><a href="#" class="fab fa-linkedin"></a></li>
+        <li><a href="#" class="fab fa-pinterest"></a></li>
+      </ul>
+    </div>
+<!-- copyright section starts -->
+<div class="copyright">
+<p>&copy; 2023 Siddhi Ganesh Secondary School. All rights reserved.</p>
+</div>
+<!-- copyright section ends -->
+  </div>
+</section>
+<!-- end of contact us section -->
+
+
+
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+
+
+</html>
