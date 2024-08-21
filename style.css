@@ -598,29 +598,33 @@ nav .navlinks li a:hover{
  /* starting of contact us section */
 
 .contact-box {
-  background-color: #dfdfdf;
- color: #fff;
+  background-color: #c7c6c6;
+ color: #265a23;
  padding: 20px;
  margin-top: 60px;
  margin-bottom: 10px;
  border-radius: 50px;
  animation: fadeIn 1s forwards;
  animation-delay: 0.5s;
-}
+} 
 
 .details-section {
  padding: 20px;
  background-color: #4a82b1;
+ border-radius: 30px;
+ color: white;
 }
 
 .get-in-touch-section {
+  margin-top: 20px;
  padding: 20px;
  background-color: #cca010d8;
+ border-radius:30px;
 }
 
 .social-media-section {     
  font-weight: bolder;
- color:#257500;
+ color:#45087e;
  text-align: center;
  margin-top: 10px;
 }
@@ -637,6 +641,7 @@ h3 {
 
 p {
  margin-bottom: 20px;
+ font-size: 14px;
 }
 
 .form-group {
@@ -679,7 +684,7 @@ button[type="submit"]:hover {
  text-decoration: none;
  font-size: 24px;
  transition: color 0.2s ease;
- color: #1520c0fb;
+ color: #104d04fb;
 }
 
 .social-media-section a:hover {
@@ -703,7 +708,7 @@ button[type="submit"]:hover {
  margin-top: 30px;
  padding: 10px 0;
  position:relative;
- border-radius: 10px;
+ border-radius: 20px;
 }
 
 .copyright p {
